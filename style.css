@@ -2,19 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-#box{
-    --startheight: 0px;
-    --endheight: 0px;
-}
-@keyframes fall{
-    0%{
-        transform: translate(0px, var(--startheight));
-    }
-    100%{
-        transform: translate(0px, var(--endheight));
-    }
-}
-
-#ball{
-    animation:fall 10ms linear 0s forwards;
-}
