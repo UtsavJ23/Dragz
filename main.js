@@ -28,8 +28,8 @@ play.onclick = function(){
 
 function fall(){
     if(velocity>=0&&distance>=1) velocity = -e*velocity;
-    distance += velocity*0.015 + g*0.015*0.015*0.5;
+    distance += velocity*0.02 + g*0.02*0.02*0.5;
     ballStyle.transform = `translateY(${ ((distance>1?1:distance)*pixelHeight) }px)`;
-    velocity += (g - (d*velocity*Math.abs(velocity)))*0.015;
+    velocity += (g - (d*velocity*Math.abs(velocity)))*0.02;
     requestID = requestAnimationFrame(fall);
 }

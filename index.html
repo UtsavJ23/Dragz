@@ -5,33 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
 </head>
-<body class="h-screen flex flex-col flex-grow bg-teal-200 bg-opacity-50 font-mono">
+<body class="h-screen flex flex-col flex-grow bg-[#eae7dc] bg-opacity-50 font-mono">
     <section class="flex flex-grow justify-around items-center">
-        <div class="h-3/4 flex flex-col justify-evenly items-center">
-            <h1 class="text-3xl p-5 rounded-full text-center bg-orange-600 font-bold">
+        <div class="h-3/4 bg-[#d8c3a5] p-4 rounded-3xl flex flex-col justify-evenly items-center">
+            <h1 class="text-3xl p-5 rounded-xl text-center bg-[#e85a4f] font-bold">
                 Dragz
             </h1>
-            <div class="grid grid-cols-3 grid-rows-3">
-                <label for="g" class="col-span-2">Accleration due to gravity: </label>
-                <input id="g" step="any" type="number" class="col-span-1" value="10">
-                <label for="e" class="col-span-2">Coefficient of restitution: </label>
-                <input id="e" step="any" type="number" class="col-span-1" value="0.8">
-                <label for="d" class="col-span-2">Coefficient of drag: </label>
-                <input id="d" type="number" step="any" class="col-span-1" value="0.47">
-                <div class="flex justify-center items-center">
-                    <button id="play" class=" bg-orange-600 rounded-3xl p-3 text-xl">Play</button>
+            <div class="flex flex-col justify-around">
+                <div class="grid grid-cols-3 grid-rows-3 gap-y-2">
+                    <label for="g" class="col-span-2">Accleration due to gravity: </label>
+                    <input id="g" step="any" type="number" class="col-span-1 bg-[#bc986a] rounded-md text-center" value="9.8">
+                    <label for="e" class="col-span-2">Coefficient of restitution: </label>
+                    <input id="e" step="any" type="number" class="col-span-1 bg-[#bc986a] rounded-md text-center" value="0.8">
+                    <label for="d" class="col-span-2">Coefficient of drag: </label>
+                    <input id="d" type="number" step="any" class="col-span-1 bg-[#bc986a] rounded-md text-center" value="0.47">
                 </div>
-                <div class="flex justify-center items-center">
-                    <button id="pause" class=" bg-orange-600 rounded-3xl p-3 text-xl">Pause</button>
-                </div>
-                <div class="flex justify-center items-center">
-                    <button id="restart" class=" bg-orange-600 rounded-3xl p-3 text-xl">Restart</button>
+                <div class="flex mt-10 justify-between items-center">
+                    <button id="play" class=" bg-[#e98074] w-1/5 rounded-xl p-3 text-xl">Play</button>
+                    <button id="pause" class=" bg-[#e98074] w-1/5 rounded-xl p-3 text-xl">Pause</button>
+                    <button id="restart" class=" bg-[#e98074] w-1/5 rounded-xl p-3 text-xl">Restart</button>
                 </div>
             </div>
         </div>
-        <div id="box" class="bg-cyan-100 p-4 h-3/4 flex flex-col justify-between items-center">
-            <div id="ball" class="w-36 h-36 rounded-full bg-cyan-500"></div>
-            <div id="ground " class="w-56 h-4 rounded-xl bg-cyan-500"></div>
+        <div id="box" class="bg-[#d8c3a5] rounded-3xl p-4 h-3/4 flex flex-col justify-between items-center">
+            <div id="ball" class="w-36 h-36 rounded-full bg-[#e85a4f]"></div>
+            <div id="ground " class="w-56 h-4 rounded-xl bg-[#e85a4f]"></div>
         </div>
     </section>
     <script src="main.js" type="module"></script>
