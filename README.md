@@ -46,3 +46,12 @@ To run the project locally, simply clone the repository and open `index.html` in
 ```bash
 git clone https://github.com/UtsavJ23/dragz-js.git
 cd dragz-js
+```
+
+## Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or improvements, please feel free to open an issue or create a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
